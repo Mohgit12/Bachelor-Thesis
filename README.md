@@ -23,5 +23,63 @@ These layers are combined using a weighted overlay approach to produce continuou
 
 ---
 
-## Repository Structure
+## Main Workflow
+
+### 1. Data Preprocessing
+- Load CBS Wijken en Buurten dataset
+- Extract Amsterdam municipal boundary
+- Clip road and spatial datasets to study area
+- Ensure consistent coordinate reference system (EPSG:28992)
+
+### 2. Suitability Modelling
+- Raster-based weighted overlay analysis
+- Scenario comparison:
+  - Baseline weights
+  - Policy scenario
+  - Equal weights scenario
+
+### 3. Validation
+- Extraction of raster values at:
+  - Existing micro-hub locations
+  - Randomly generated reference points
+- Statistical comparison using Mann–Whitney U test
+
+---
+
+## Key Outputs
+
+The scripts generate:
+
+- Weighted suitability rasters (baseline, policy, equal)
+- Descriptive raster statistics (mean, std, min, max)
+- Class distribution of suitability values
+- Validation results comparing hubs vs random points
+
+---
+
+## Technologies Used
+
+- Python 3.10+
+- GeoPandas
+- Rasterio
+- NumPy
+- SciPy
+- Shapely
+
+---
+
+## Coordinate Reference System
+
+All spatial data are projected to:
+
+**EPSG:28992 — Amersfoort / RD New (Netherlands national coordinate system)**
+
+---
+
+## Installation
+
+Install required dependencies using:
+
+```bash
+pip install geopandas rasterio numpy scipy shapely
 
