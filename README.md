@@ -46,6 +46,50 @@ These layers are combined using a weighted overlay approach to produce continuou
 
 ---
 
+## Repository Structure
+
+### `raster_array.py`
+Core analytical script used in the thesis.
+
+Functions:
+- Processes geospatial input layers
+- Standardises criteria
+- Applies weighted overlay analysis
+- Generates suitability rasters
+- Produces descriptive statistics
+- Conducts validation analysis
+
+This file represents the main GIS-MCDA methodology and ensures reproducibility of the results.
+
+---
+
+### `final_deliverable.py`
+Final interactive dashboard and georeferenced visualization.
+
+Functions:
+- Loads generated suitability rasters
+- Preserves GeoTIFF affine transformations
+- Displays suitability maps in correct geographic orientation
+- Compares policy scenarios using dropdown menus
+- Produces histograms and validation plots
+
+This file serves as the final presentation and decision-support interface.
+
+---
+
+### `microhub_planner.py`
+Interactive scenario-testing tool.
+
+Functions:
+- Allows users to modify MCDA weights
+- Generates custom suitability maps
+- Supports rapid sensitivity analysis
+- Enables stakeholder-driven experimentation
+
+This file extends the thesis into a practical planning application.
+
+---
+
 ## Key Outputs
 
 The scripts generate:
