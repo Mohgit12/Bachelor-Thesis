@@ -6,9 +6,9 @@ import plotly.graph_objects as go
 # 1. LOAD RASTERS WITH REAL COORDINATES
 
 rasters = {
-    "Baseline": r"C:\Year 3\Bachelor Thesis\Thesis\Weighted_Overlays\weighted_overlay1.tif", # Baseline
-    "Policy": r"C:\Year 3\Bachelor Thesis\Thesis\Weighted_Overlays\weighted_overlay2.tif",
-    "Equal": r"C:\Year 3\Bachelor Thesis\Thesis\Weighted_Overlays\weighted_overlay3.tif"
+    "Baseline": r"weighted_overlay1.tif", # Baseline
+    "Policy": r"weighted_overlay2.tif",
+    "Equal": r"weighted_overlay3.tif"
 }
 
 data = {}
