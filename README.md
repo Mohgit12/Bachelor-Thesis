@@ -99,6 +99,7 @@ The scripts generate:
 - Class distribution of suitability values
 - Validation results comparing hubs vs random points
 
+![Micro-Hub Planning Dashboard](dashboard_preview.png)
 ---
 
 ## Technologies Used
@@ -126,4 +127,5 @@ Install required dependencies using:
 
 ```bash
 pip install geopandas rasterio numpy scipy shapely
+```
 
